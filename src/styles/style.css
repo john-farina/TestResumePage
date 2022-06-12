@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'JetBrains Mono Bold';
+    src: url('/fonts/JetBrainsMono-Bold.ttf');
+}
+@font-face {
+    font-family: 'JetBrains Mono ExtraBold';
+    src: url('/fonts/JetBrainsMonoNL-ExtraBold.ttf');
+}
+
+:root {
+    --white: rgb(255, 254, 233);
+    --extraWhite: rgb(255, 255, 253);
+}
+
+body {
+    background-color: rgb(62, 62, 62);
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'JetBrains Mono Bold', Courier, monospace;
+    color: var(--white);
+}
+
+#header {
+    top: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(42, 42, 42);
+}
+
+.fa-brands {
+    font-size: 2rem;
+    color: var(--white);
+}
+.fa-solid {
+    color: var(--white);
+    font-size: 1.7rem;
+}
+
+#resumeButton,
+#gitHubButton,
+#emailButton {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    font-size: 1rem;
+    font-family: 'JetBrains Mono Bold', Courier, monospace;
+    border-style: dotted;
+    border-radius: 10%;
+    border-color: gray;
+    transition-property: width, box-shadow, height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    border-right: 0;
+    border-left: 0;
+}
+
+#resumeButton {
+}
+#resumeButton:hover {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    width: 102px;
+    height: 52px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 40%);
+}
+#resumeButton:active {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: black;
+}
+#gitHubButton,
+#emailButton {
+    width: 60px;
+    height: 50px;
+}
+#gitHubButton:hover,
+#emailButton:hover {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    width: 62px;
+    height: 52px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 40%);
+}
+#gitHubButton:active,
+#emailButton:active {
+    background-color: rgb(165, 165, 165);
+    color: black;
+    border-style: solid;
+    border-color: black;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: 0.15em solid blue;
+}
+
+.boldText {
+    color: var(--extraWhite);
+    font-family: 'JetBrains Mono ExtraBold', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+#card-container {
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 200px;
+}
+.card-backing {
+    height: 150px;
+    width: 10px;
+    background-color: rgb(40, 60, 243);
+    border-radius: 5%;
+}
+
+.cardHeading {
+    margin-bottom: 20px;
+}
+.cardText {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.lineBreak {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+.theLine {
+    font-size: 2rem;
+}
+
+#card2 {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    gap: 20px;
+}
+#project-container {
+    margin-bottom: 20px;
+}
+.project-back {
+    height: 350px;
+}
+.projHeading {
+    margin-bottom: 30px;
+}
+
+.projectRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#project1 {
+    margin-top: -30px;
+}
+#project2 {
+}
+
+.projectName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 80px;
+    font-size: 1.6rem;
+    border-color: white;
+    border-left: 0;
+    border-right: 0;
+    border-style: dotted;
+    text-align: center;
+    border-radius: 7%;
+    transition-property: width, box-shadow, height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+.projectName:hover {
+    background-color: var(--white);
+    color: rgb(93, 93, 93);
+    border-color: rgb(68, 68, 68);
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    width: 174px;
+    height: 84px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 40%);
+}
+
+.project- {
+    margin-left: 10px;
+    font-size: 2rem;
+}
+.projectDesc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 380px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+.card-contents {
+}
+
+@media only screen and (max-width: 600px) {
+    .theLine {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+}
