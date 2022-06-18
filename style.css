@@ -145,7 +145,7 @@ body {
     width: 100px;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 0.12em solid rgb(57, 169, 229);
+    border-right: 0.14em solid rgb(57, 169, 229);
     animation: typing 1.1s steps(6) 1s 1 normal both, blink 1s steps(1) infinite;
 }
 @keyframes typing {
