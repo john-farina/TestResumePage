@@ -85,12 +85,12 @@ body {
     align-items: center;
     justify-content: center;
     width: 65px;
-    height: 32px;
+    height: 38px;
 }
 #resumeButton:hover {
     font-size: 14px;
     width: 67px;
-    height: 34px;
+    height: 40px;
     box-shadow: -2px 2px 10px rgba(0, 0, 0, 40%);
 }
 
@@ -99,13 +99,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
+    height: 38px;
     width: 40px;
 }
 
 #gitButton:hover,
 #emailButton:hover {
-    height: 37px;
+    height: 40px;
     width: 42px;
     box-shadow: -2px 2px 10px rgba(0, 0, 0, 40%);
 }
@@ -187,4 +187,59 @@ iframe {
     margin-top: 76px;
     height: 100%;
     width: 100%;
+}
+
+#card4 {
+    margin-top: -25px;
+    margin-bottom: 70px;
+}
+#icon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.icon-row {
+    display: flex;
+    gap: 10px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 30%);
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-js-square,
+.fa-node,
+.fa-react {
+    font-size: 3.3rem;
+}
+.fa-html5 {
+    color: rgb(202, 63, 63);
+}
+.fa-css3-alt {
+    color: rgb(47, 47, 239);
+}
+.fa-js-square {
+    color: rgb(229, 229, 95);
+}
+.fa-node {
+    color: rgb(62, 125, 62);
+}
+.fa-react {
+    color: rgb(61, 207, 240);
+}
+.photoshop,
+.audition {
+    height: 60px;
+}
+.premiere {
+    height: 66px;
 }
