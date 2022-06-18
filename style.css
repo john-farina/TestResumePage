@@ -141,6 +141,29 @@ body {
     align-items: center;
 }
 
+#typeText {
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+
+    font-family: 'Courier New';
+    border-right: 0.12em solid rgb(57, 169, 229);
+    animation: typing 1.1s steps(6) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 88px;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 #card1 {
 }
 
@@ -192,6 +215,11 @@ iframe {
 #card4 {
     margin-top: -25px;
     margin-bottom: 70px;
+}
+.cardBack4 {
+    margin-top: 20px;
+    width: 5px;
+    height: 200px;
 }
 #icon-container {
     display: flex;
